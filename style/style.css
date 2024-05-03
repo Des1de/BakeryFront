@@ -1,0 +1,305 @@
+:root {
+
+    --image-filter: none;
+  
+    /* font - .5rem = 8px | 1rem = 16px */
+    --body-font: "Oswald", sans-serif;
+    --h1-font-size: 1.65rem;
+    --h2-font-size: 1.45rem;
+    --h3-font-size: 1.25rem;
+  
+    --normal-font-size: 1.15rem;
+    --small-font-size: 1rem;
+  
+    --font-medium: 400;
+    --font-semi-bold: 600;
+    --font-light: 300;
+  
+    /* margenes */
+    --m-0-5: .5rem;
+    --m-0-75: .75rem;
+    --m-1: 1rem;
+    --m-1-5: 1.5rem;
+    --m-2: 2rem;
+    --m-2-5: 2.5rem;
+    --m-3: 3rem;
+  
+    --card-padding: 1.9rem 0.95rem;
+    --border-radius: 1.25rem;
+    --box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  
+    --nb-slides: 5;
+    --dot-size: 15px;
+  }
+
+  /* base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    scroll-behavior: smooth;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+  }
+  
+  body,
+  button,
+  input,
+  textarea {
+    font-family: var(--body-font);
+    font-size: var(--bold-font-size);
+  }
+  
+  body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--color-dark);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: var(--font-semi-bold);
+  }
+  
+  h1 {
+    font-size: var(--h1-font-size);
+  }
+  
+  h2 {
+    font-size: var(--h2-font-size);
+  }
+  
+  h3 {
+    font-size: var(--h3-font-size);
+  }
+  
+  input {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+  }
+
+  p{
+    line-height: 1.6rem;
+  }
+
+.flex {
+    display: flex;
+}
+
+.container{ 
+  margin: 0 auto; 
+  max-width: 1440px;
+}
+
+.deffault-btn{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 3rem;
+    background-color: black;
+    color: aliceblue;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+}
+
+.deffault-btn:hover{
+    cursor: pointer;
+}
+
+
+header{ 
+    height: 5rem;
+    background-color: black;
+}
+
+.header-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    align-items: center;
+}
+
+.header-container  h1{
+    padding-left: 7rem;
+    color: aliceblue;
+}
+
+.header-container > a { 
+    color: aliceblue;
+}
+
+.header-container > a:nth-child(1){
+    grid-column: 1; 
+}
+
+.header-container > a:nth-child(2){
+    grid-column: 2; 
+}
+
+.header-container > a:nth-child(3){
+    grid-column: 3; 
+}
+
+
+.main-pic-section{
+    background-image: url("/media/main-pic.jpg");
+    background-size: cover; /* Масштабирование изображения для заполнения фона */
+    background-position: 50% 50%; /* Положение изображения в центре фона */
+    background-repeat: no-repeat; /* Запрет повторения изображения */
+    height: 30rem;
+    flex-direction: column;
+    align-items: center;
+}
+.main-pic-section > h1{
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+    font-size: 4rem; 
+    color: aliceblue;
+    cursor: default;
+}
+
+.types-section{
+    height: 32rem;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.types-section > h1{
+    margin-top: 3rem; 
+    font-size: 2.5rem;
+}
+
+
+.types-section > span{
+  margin-top: 0.5rem;
+  width: 40rem;
+  text-align: center;
+  font-size: var(--normal-font-size);
+}
+
+.types-list{ 
+    display: flex;
+}
+
+.production-type{ 
+    margin:2rem;
+    display: grid;
+    grid-template-rows: 10rem 4rem;
+    grid-template-columns: 8rem;
+    align-items: center;
+}
+
+.production-type > img{ 
+    width: 9rem;
+    border-radius: 3.5rem;
+    height: 100%;
+    grid-row: 1; 
+    object-fit: cover;
+}
+
+.production-type > h1{ 
+    text-align: center;
+}
+
+
+.about-section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25rem;
+  background-color: aliceblue;
+}
+
+.about-picture{
+  background-image: url("/media/about-bakery.jpg");
+  background-size: cover; 
+  background-position: 50% 50%; 
+  background-repeat: no-repeat; 
+  grid-row: 0;
+}
+
+.about-text-block{
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-top: 4rem;
+ 
+}
+
+.about-text-block > h1{ 
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.about-text-block > p{ 
+  margin-bottom: 1.5rem;
+  font-size: var(--normal-font-size);
+}
+
+.reviews-section{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+.slider{
+  margin-top: 3rem;
+  width: 60rem;
+}
+
+.review > img{ 
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+.review-text{
+  margin-left: var(--m-2);
+  padding-top: 4rem;
+  flex-direction: column;
+}
+
+.review-text > p, .name, .job{
+  font-size: var(--normal-font-size);
+}
+
+.name{
+  font-weight: bold;
+}
+
+footer{ 
+  height: 20rem; 
+  background-color: aliceblue;
+}
+
+footer .pages, .contact-info{
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+footer .map{ 
+  flex-grow: 2; 
+  flex-direction: column;
+}
