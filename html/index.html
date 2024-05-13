@@ -8,15 +8,29 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
-        <h1><a href="index.html">Bakery Name</a></h1>
-        <h3><a href="menu.html">Menu</a></h3>
-        <h3><a href="about.html">About</a></h3>
-      </div>
+      <nav class="navbar">
+        <a href="/html/index.html" class="nav-branding">ChadBakery</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/html/index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/html/menu.html" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="/html/about.html" class="nav-link">About</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="main-pic-section flex">
-        <h1>Here for out bakery? Great!</h1>
+        <h1>Here for our bakery? Great!</h1>
         <div class="deffault-btn">Menu</div>
       </section>
       <section class="types-section flex container">
@@ -133,7 +147,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container flex">
         <div class="pages flex">
           <a href="index.html"><span>Home</span></a>
@@ -146,17 +160,6 @@
             ><span>Minsk, Dzerjinskogo 81</span></a
           >
           <a href="tel:+375445459296">+375445459296</a>
-        </div>
-        <div class="map flex">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75295.47262084554!2d27.339167697265616!3d53.86094100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd07ad6c194df%3A0xbcc9109fada4b7b8!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3QvtC1INGD0YfRgNC10LbQtNC10L3QuNC1ICLQn9GB0LjRhdC-0L3QtdCy0YDQvtC70L7Qs9C40YfQtdGB0LrQuNC5INCU0L7QvC3QmNC90YLQtdGA0L3QsNGCIOKEliA0!5e0!3m2!1sru!2sby!4v1714743594187!5m2!1sru!2sby"
-            width="300"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
         </div>
       </div>
     </footer>

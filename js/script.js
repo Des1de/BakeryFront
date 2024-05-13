@@ -1,10 +1,12 @@
-const documentReady = () => {
-    const header = document.querySelector(".header");
-  
-    const documentScroll = () => {
-      header.classList.toggle("header--scroll", window.scrollY > 0);
-    };
-  
-    document.addEventListener("scroll", documentScroll);
-  };
-  document.addEventListener("DOMContentLoaded", documentReady);
+const hamburger = document.querySelector(".hamburger"); 
+const navMenu = document.querySelector(".nav-menu"); 
+
+hamburger.addEventListener("click", () =>{
+  hamburger.classList.toggle("active"); 
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=>{
+  hamburger.classList.remove("active"); 
+  navMenu.classList.remove("active"); 
+}))
