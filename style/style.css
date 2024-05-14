@@ -106,7 +106,6 @@
   }
   
   input {
-    background-color: var(--main-color);
     color: var(--font-color);
   }
 
@@ -671,9 +670,9 @@ header{
 }
 
 .join-our-team-section{
-  background-image: url("/media/main-pic.jpg");
+  background-image: url("/media/about-page-pic.jfif");
     background-size: cover; /* Масштабирование изображения для заполнения фона */
-    background-position: 50% 50%; /* Положение изображения в центре фона */
+    background-position: 50% 30%; /* Положение изображения в центре фона */
     background-repeat: no-repeat; /* Запрет повторения изображения */
     height: 550px;
     width: 100%;
@@ -701,15 +700,15 @@ header{
 
 .team-member-list>h1{
   font-size: 3rem;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .team-member{
   display: flex;
   justify-content: center;
   width: 90%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 40px;
 }
 
@@ -803,4 +802,38 @@ header{
     border-bottom-right-radius: 40px;
   }
   
+}
+
+.rfw {
+  padding: 20px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rfw form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 40px;
+}
+
+.rfw .form .box {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+
+.box{
+  background-color: var(--main-color);
+}
+
+.rfw .form textarea {
+  height: 15rem;
+  resize: none;
 }
