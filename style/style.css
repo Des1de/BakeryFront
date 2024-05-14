@@ -27,7 +27,7 @@
     --light-switch-icon: url("/media/theme-icons/sun.svg");
     --light-text: #000;
     --light-bg: #ffffff;
-    --light-theme: #ffd1dc;
+    --light-theme: #b0e0e6;
     --light-theme-filter: invert(1) sepia(0) saturate(0) hue-rotate(0);
 
     /* Dark mode */
