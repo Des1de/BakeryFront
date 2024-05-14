@@ -807,6 +807,7 @@ header{
 .rfw {
   padding: 20px;
   margin-top: 60px;
+  margin-bottom: 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
