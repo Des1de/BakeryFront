@@ -24,7 +24,7 @@
     --small-font-size: 1rem;
 
      /* Light mode */
-    --light-switch-icon: url('/BakeryFront/media/theme-icons/sun.svg');
+    --light-switch-icon: url('../media/theme-icons/sun.svg');
     --light-text: #000;
     --light-bg: #ffffff;
     --light-theme: #b0e0e6;
@@ -32,7 +32,7 @@
     --light-theme-filter: invert(1) sepia(0) saturate(0) hue-rotate(0);
 
     /* Dark mode */
-    --dark-switch-icon: url('/BakeryFront/media/theme-icons/moon.svg');
+    --dark-switch-icon: url('../media/theme-icons/moon.svg');
     --dark-text: #f0f8ff;
     --dark-bg: #5d4037;
     --dark-theme: #7a7368;
