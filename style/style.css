@@ -666,7 +666,7 @@ header{
 .product-text{
   display: flex;
   flex-direction: column;
-  height: 175px;
+  height: auto;
 }
 
 .product-text > h1.product-name{
@@ -679,7 +679,7 @@ header{
   font-size: 18px;
   padding-left: 8px;
   padding-right: 6px;
-  height: 100px;
+  height: auto;
   text-align: justify;
 }
 
@@ -701,7 +701,7 @@ header{
     justify-content: left;
     flex-direction: row;
     width: 95%;
-    height: 200px;
+    height: 250px;
   }
 
   .product-item > img{
@@ -725,7 +725,7 @@ header{
     font-size: 18px;
     padding-left: 4px;
     padding-right: 6px;
-    height: 130px;
+    height:70%;
     text-align: justify;
   }
 
@@ -908,12 +908,16 @@ header{
     background-repeat: no-repeat; /* Запрет повторения изображения */
     height: 100vh;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
     padding-top: 200px;
 }
 
-.contact-section > span{
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container > h1{
   line-height: 4rem;
   color: #fff;
   font-size: 3rem;
