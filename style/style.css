@@ -732,7 +732,7 @@ header{
 }
 
 .join-our-team-section{
-  background-image: url('../media/about-page-pic.jfif');
+  background-image: url('BakeryFront/media/about-page-pic.jfif');
     background-size: cover; /* Масштабирование изображения для заполнения фона */
     background-position: 50% 30%; /* Положение изображения в центре фона */
     background-repeat: no-repeat; /* Запрет повторения изображения */
